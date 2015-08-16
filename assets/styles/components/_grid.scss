@@ -1,0 +1,10 @@
+// Grid system
+.main {
+  @include span-columns($main-sm-columns);
+  .sidebar-primary & {
+    @include span-columns($main-sm-columns - $sidebar-sm-columns);
+  }
+}
+.sidebar {
+  @include span-columns($sidebar-sm-columns);
+}

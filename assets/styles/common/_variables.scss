@@ -1,0 +1,56 @@
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+// Typography
+$helvetica: "Helvetica";
+$base-font-family: $helvetica;
+$heading-font-family:  $base-font-family;
+
+// Neat Breakpoints
+$medium-screen: em(640);
+$large-screen: em(860);
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    3;
+
+// Colors
+$blue:#50A3CF;
+$facebook-blue: #506CCF;
+$red: #EA3030;
+$dark-gray: #6C6C6C;
+$medium-gray: #D2D2D2;
+$light-gray: #EBEBEB;
+
+// Font Colors
+$base-background-color: $light-gray;
+$base-font-color: $dark-gray;
+$action-color: $dark-gray;
+$base-accent-color: $blue;
+
+// WP Classes
+$line-height-computed:  1.4;
+$thumbnail-caption-padding: 0.2em;
+
+// Font Sizes
+$base-font-size: 1em;
+$header-font-weight: 400;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+$box-shadow:            0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);

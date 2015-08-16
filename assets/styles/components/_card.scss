@@ -1,0 +1,116 @@
+.card {
+  @include clearfix;
+  @include transition(all 0.5s ease-in-out);
+
+  & > * {
+    @include transition(all 0.5s ease-in-out);
+  }
+
+  padding: 2em;
+  background: #fff;
+  border-radius: 2px;
+  /* chip bg: */
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+
+  &.popout {
+    box-shadow: 0px 15px 12px 0px rgba(0,0,0,0.22), 0px 19px 38px 0px rgba(0,0,0,0.30);
+    background: #FAFAFA;
+  }
+
+  &.post-banner {
+    min-width: 320px;
+    padding: 0;
+    margin-bottom: 2em;
+
+    @include media(max-width $medium-screen) {
+      width: 320px;
+      margin: auto;
+    }
+
+    .image-panel {
+      position: relative;
+      height: 350px;
+      background-position: center;
+      background-size: cover;
+
+      @include media(max-width $medium-screen) {
+        height: 200px;
+
+        h1.white-heading {
+          font-size: 24px;
+        }
+      }
+
+      h1.white-heading {
+        position: absolute;
+        bottom: 0.5em;
+        left: 0.5em;
+        right: 0.5em;
+      }
+    }
+
+    .text-panel {
+      @include clearfix();
+      width: 100%;
+      position: relative;
+      height: 150px;
+
+      @include media(min-width $medium-screen) {
+      }
+
+      .text-block {
+        padding: 1.5em 2em 0;
+
+        p {
+          height: 45px;
+          overflow: hidden;
+
+          @include media(min-width $medium-screen) {
+          }
+        }
+      }
+
+    }
+    .nav-block {
+      position: absolute;
+      bottom: 1em;
+      right: 0;
+      left: 0;
+      padding: 1em 2em 0;
+
+      .social-bar {
+        width: 100px;
+        margin: 0 auto;
+        float: left;
+        padding: 11px 0;
+      }
+      button.flat {
+        float: right;
+      }
+    }
+
+    &.secondary {
+
+      .image-panel {
+        height: 171px;
+
+        h1.white-heading {
+          font-size: 24px;
+        }
+      }
+
+      .text-panel {
+        height: 65px;
+
+        .text-block {
+          display: none;
+        }
+
+        button.flat {
+          float: right;
+          display: block;
+        }
+      }
+    }
+  }
+}
