@@ -1,4 +1,5 @@
 .comment-list {
+  @extend .card;
   list-style: none;
 }
 .comment-list ol {

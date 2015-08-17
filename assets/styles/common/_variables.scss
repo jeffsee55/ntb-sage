@@ -3,8 +3,8 @@ $icon-font-path:        "../fonts/";
 
 // Typography
 $helvetica: "Helvetica";
-$base-font-family: $helvetica;
-$heading-font-family:  $base-font-family;
+$base-font-family: "AvenirNext-regular", $helvetica;
+$heading-font-family: "AvenirNext" $base-font-family;
 
 // Neat Breakpoints
 $medium-screen: em(640);
